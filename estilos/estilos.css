@@ -20,10 +20,11 @@ html{
 }
 
 body{
+    /*
+    overflow-x: hidden;
+    */
     background-color:  #fc6767;
-    
     background: linear-gradient(to left, var(--primario)  0%, var(--primariob) 100%);
-    
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -48,9 +49,9 @@ img{
 }
 
 .contenedor{
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
-}
+}  
 
 h1, h2, h3, a{
     text-align: center;
@@ -126,10 +127,10 @@ h3{font-size: 2.4rem;}
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-
+    grid-template-columns: repeat(2, 50%);
+    gap: 2rem;
+    margin: 2rem;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -146,12 +147,13 @@ h3{font-size: 2.4rem;}
     border-radius: 5px;
     box-shadow: var(--sombra);
 }
+
 .producto__imagen{
     width:100%;
 }
 
 .producto__nombre{
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 .producto__precio{
     font-size: 2.8rem;
@@ -159,11 +161,22 @@ h3{font-size: 2.4rem;}
 }
 .producto__nombre,
 .producto__precio{
+    
     font-family: var(--fuenteprincipal);
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     color: var(--secundario);
+}
+.producto__nombre{
+    color: rgb(190, 189, 189);
+}
+
+@media (max-width: 412px) {
+    .producto__nombre,
+    .producto__precio{
+        font-size: 1.5rem;
+}
 }
 
 /* IMAGENES EN GRID *******************************************************/
@@ -294,6 +307,7 @@ h3{font-size: 2.4rem;}
     padding: 1rem;
     border-radius: 5px;
 }
+
 @media (max-width: 768px) {
    .formulario__campo{
     width:100%;
