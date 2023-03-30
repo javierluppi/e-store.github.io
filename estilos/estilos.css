@@ -185,6 +185,8 @@ h3{font-size: 2.4rem;}
     min-height: 30rem;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
+    box-shadow: var(--sombra);
 
 }
 .grafico--remeras{
