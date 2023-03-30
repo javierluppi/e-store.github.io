@@ -294,6 +294,11 @@ h3{font-size: 2.4rem;}
     padding: 1rem;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+   .formulario__campo{
+    width:100%;
+   }
+}
 
 .formulario__submit{
     background-color: rgb(255, 217, 0);
